@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+body {
+  font: 14px/1.5 \5fae\8f6f\96c5\9ed1, \5b8b\4f53, 'Hiragino Sans GB', STHeiti,
+    'WenQuanYi Micro Hei', 'Droid Sans Fallback', SimSun, sans-serif;
+  background: #fff;
+}
+
+#app,
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/*表单样式*/
+.glo-reset-form {
+  background: #f4f4f4;
+
+  //padding-bottom: 14px;
+  .el-form {
+    .el-form-item {
+      //width: 128px;
+      padding: 14px 0;
+      //margin: 14px 0px 14px 0;
+      margin: 0;
+
+      .el-form-item__content {
+        width: 100%;
+      }
+
+      .el-date-editor {
+        width: 100%;
+      }
+
+      .el-input__inner {
+        border: 1px solid #dddddd;
+        border-radius: 0px;
+        color: #333;
+        font-size: 14px;
+        padding: 0 10px;
+        // padding: 0px;
+        width: 128px;
+        font-family: Helvetica;
+      }
+
+      .el-date-editor .el-input__inner {
+        width: 128px;
+        padding-left: 30px;
+      }
+
+      .el-input__suffix {
+        //color: #333;
+      }
+    }
+
+    .el-button {
+      //width: 74px;
+    }
+  }
+}
+
+// 表格
+.glo-reset-table {
+
+  .el-table th.is-leaf,
+  .el-table td {
+    border-bottom: 0;
+    text-align: center;
+    color: #4e4e4e;
+    padding: 4px 0;
+
+    .cell {
+      padding: 10px 0;
+      //padding: 0;
+      text-align: center;
+
+      .el-button {
+        padding: 0 0 0 10px;
+      }
+
+      .inherit-el-button {
+        padding: 12px 20px;
+      }
+
+      .el-checkbox {
+        width: 20px;
+        height: 21px;
+        border-radius: 3px;
+      }
+
+      .el-checkbox__inner {
+        //border: 0;
+        width: 17px;
+        height: 18px;
+        border: 1px solid #c0c0c0;
+        //background: linear-gradient(0deg, #cbc5c0 0%, #cbc5c0 100%,  #dcd9d6 200%);
+
+        //background-color: #3199DF;
+        //box-shadow: 0 1px 3px 0 #ffffff, inset 0 1px 1px 0 rgba(0, 0, 0, 0.2),
+        //  inset 0 0 0 0 rgba(0, 0, 0, 0.02);
+      }
+
+      .el-checkbox__inner::after {
+        height: 12px;
+        left: 6px;
+        top: 0px;
+        position: absolute;
+      }
+    }
+  }
+
+  .el-table th.is-leaf {
+    border-right: 2px solid white;
+  }
+
+  .is-leaf {
+    background: #f0f0f0;
+    height: 44px;
+  }
+}
+
+//  底部分页和批量操作
+.glo-page {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  background: white;
+  //position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  .page-btn {
+    float: left;
+    position: relative;
+
+    .page-btn-span {
+      //position: absolute;
+    }
+
+    .el-input.is-disabled .el-input__inner {
+      background: #6ca6cd;
+      color: #fff;
+    }
+
+    .el-button.is-disabled,
+    .el-button.is-disabled:focus,
+    .el-button.is-disabled:hover {
+      background: #6ca6cd;
+      color: #fff;
+    }
+  }
+
+  .page-content {
+    float: right;
+  }
+}
+
+.glo-inDialog-close-container {
+  text-align: right;
+  padding: 8px;
+}
